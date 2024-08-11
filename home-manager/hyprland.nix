@@ -46,7 +46,6 @@
       exec-once = [
         "wl-paste --type text --watch cliphist store #Stores only text data"
         "wl-paste --type image --watch cliphist store #Stores only image data"
-	"dbus-update-activation-environment --systemd WAYLAND_DISPLAY XDG_CURRENT_DESKTOP"
       ];
       monitor = [ 
         "HDMI-A-1,1920x1080@60.00,0x0,1" 

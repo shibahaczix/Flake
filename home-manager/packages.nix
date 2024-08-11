@@ -15,6 +15,5 @@
     pkgs.hyprpicker
     pkgs.gimp
     pkgs.remmina
-    pkgs.xdg-desktop-portal-hyprland
   ];
 }

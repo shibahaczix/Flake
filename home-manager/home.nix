@@ -35,7 +35,7 @@
     ./kitty.nix
     ./stylix.nix # Automatic home-manager module detection
     ./eww.nix
-    #./nixvim.nix
+    ./nixvim.nix
   ];
 
   # Symlink example

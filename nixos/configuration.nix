@@ -53,15 +53,15 @@
     ];
   };
 
-  security.doas = {
-    enable = true;
-    extraRules = [{
-      users = ["shiba"];
-      keepEnv = true; 
-      persist = true;
-    }];
-  };
-  security.sudo.enable = false;
+  #security.doas = {
+  #  enable = true;
+  #  extraRules = [{
+  #    users = ["shiba"];
+  #    keepEnv = true; 
+  #    persist = true;
+  #  }];
+  #};
+  #security.sudo.enable = false;
 
   programs.nh = {
     enable = true;

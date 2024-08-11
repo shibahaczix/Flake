@@ -7,7 +7,9 @@
     systemd.enable = true;
     settings = {
       general = {
-        env = "HYPRCURSOR_SIZE,24";
+        env = [
+	  "HYPRCURSOR_SIZE,24"
+	];
         gaps_in = "5";
         gaps_out = "10";
 

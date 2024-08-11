@@ -15,5 +15,6 @@
     pkgs.hyprpicker
     pkgs.gimp
     pkgs.remmina
+    pkgs.blockbench
   ];
 }

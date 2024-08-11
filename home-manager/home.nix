@@ -15,7 +15,9 @@
     inputs.hyprland.homeManagerModules.default
     inputs.nixvim.homeManagerModules.nixvim
     ./packages.nix
+    ./git.nix
     ./starship.nix # I also put fish there
+    ./gammastep.nix
     ./hyprland.nix
     ./fastfetch.nix
     ./fuzzel.nix
@@ -25,24 +27,13 @@
     ./nixvim.nix
   ];
 
-  # Symlink for hyprland.conf example
+  # Symlink example
   #xdg.configFile."hypr/hyprland.conf".source =
   #  config.lib.file.mkOutOfStoreSymlink ./hypr/hyprland.conf;
 
   # Programs and services here
 
-  services.gammastep = {
-    enable = true;
-    provider = "manual";
-    latitude = 52.2;
-    longitude = 18.2;
-  };
 
-  programs.git = {
-    enable = true;
-    userName  = "shibahaczix";
-    userEmail = "shibahaczix@gmail.com";
-  };
 
   # Nicely reload system units when changing configs
   systemd.user.startServices = "sd-switch";

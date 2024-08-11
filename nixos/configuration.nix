@@ -6,7 +6,6 @@
     settings = {
       trusted-users = [ "shiba" ];
       substituters = [
-        "http://binarycache.example.com"
         "https://nix-community.cachix.org"
         "https://cache.nixos.org/"
       ];

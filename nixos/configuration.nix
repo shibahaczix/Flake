@@ -2,7 +2,7 @@
 
 {
   
-   nix = {
+  nix = {
     settings = {
       trusted-users = [ "shiba" ];
       substituters = [

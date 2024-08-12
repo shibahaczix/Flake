@@ -26,8 +26,7 @@
   ];
 
   # Symlink example
-  #xdg.configFile."hypr/hyprland.conf".source =
-  #  config.lib.file.mkOutOfStoreSymlink ./hypr/hyprland.conf;
+  # home.file.".zshrc".source = ./zshrc; 
 
   # Programs and services here
 

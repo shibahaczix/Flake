@@ -67,46 +67,46 @@
 	};
 	golang = {
 		symbol = " ";
-		style = "bg:#6836FF";
+		style = "bg:#4852FF";
 		format = "[ $symbol ($version) ]($style)";
 	};
 	gradle = {
-		style = "bg:#6836FF";
+		style = "bg:#4852FF";
 		format = "[ $symbol ($version) ]($style)";
 	};
 	haskell = {
 		symbol = " ";
-		style = "bg:#6836FF";
+		style = "bg:#4852FF";
 		format = "[ $symbol ($version) ]($style)";
 	};
 	java = {
 		symbol = " ";
-		style = "bg:#6836FF";
+		style = "bg:#4852FF";
 		format = "[ $symbol ($version) ]($style)";
 	};
 	julia = {
 		symbol = " ";
-		style = "bg:#6836FF";
+		style = "bg:#4852FF";
 		format = "[ $symbol ($version) ]($style)";
 	};
 	nodejs = {
 		symbol = "";
-		style = "bg:#6836FF";
+		style = "bg:#4852FF";
 		format = "[ $symbol ($version) ]($style)";
 	};
 	nim = {
 		symbol = "󰆥 ";
-		style = "bg:#6836FF";
+		style = "bg:#4852FF";
 		format = "[ $symbol ($version) ]($style)";
 	};
 	rust = {
 		symbol = "";
-		style = "bg:#6836FF";
+		style = "bg:#4852FF";
 		format = "[ $symbol ($version) ]($style)";
 	};
 	scala = {
 		symbol = " ";
-		style = "bg:#6836FF";
+		style = "bg:#4852FF";
 		format = "[ $symbol ($version) ]($style)";
 	};
 	time = {

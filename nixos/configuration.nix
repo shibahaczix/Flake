@@ -86,7 +86,7 @@
 
   stylix = {
     enable = true;
-    image = /home/shiba/wallpaper.png;
+    image = /home/shiba/flake/nixos/wallpaper.jpg;
   };
 
   xdg.portal.config = {

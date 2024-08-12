@@ -29,6 +29,7 @@
       fish.enable = false;
       hyprland.enable = false;
       vesktop.enable = true;
+      chromium.enable = false;
     };
 
     cursor = {

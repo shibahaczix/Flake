@@ -23,22 +23,25 @@
           enable = true;
           installCargo = true;
         };
-	zls = {
+        zls = {
+
           enable = true;
-	};
+        };
       };
     };
     keymaps = [
       {
-        action = "<cmd>Telescope find_files<CR>";
+        action = ":Telescope find_files<CR>";
         key = "<C-f>";
+        mode = "n";
         options = {
           silent = true;
         };
       }
       {
-        action = "<cmd>:FloatermToggle<CR>";
+        action = ":FloatermToggle<CR>";
         key = "<C-g>";
+        mode = "n";
         options = {
           silent = true;
         };

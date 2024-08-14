@@ -26,6 +26,19 @@
   chaotic.scx.enable = true; # by default uses scx_rustland scheduler
   chaotic.mesa-git.enable = true;
 
+  programs.auto-cpufreq.enable = true;
+
+  programs.auto-cpufreq.settings = {
+    charger = {
+      governor = "ondemand";
+      turbo = "auto";
+    };
+    battery = {
+      governor = "powersave";
+      turbo = "auto";
+    };
+  };
+
   networking.hostName = "nixos"; # Define your hostname.
   networking.networkmanager.enable = true;
 

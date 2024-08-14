@@ -12,6 +12,10 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
     chaotic.url = "github:chaotic-cx/nyx/nyxpkgs-unstable"; # Probably not gonna use it in home for packages
+    auto-cpufreq = {
+      url = "github:AdnanHodzic/auto-cpufreq";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
     hyprland.url = "git+https://github.com/hyprwm/Hyprland?submodules=1";
     stylix.url = "github:danth/stylix";
     nixvim = {
@@ -21,7 +25,7 @@
     prismlauncher.url = "github:PrismLauncher/PrismLauncher";
   };
 
-  outputs = { self, nixpkgs, home-manager, chaotic, hyprland, stylix, nixvim, prismlauncher, ... }@inputs: 
+  outputs = { self, nixpkgs, home-manager, chaotic, auto-cpufreq, hyprland, stylix, nixvim, prismlauncher, ... }@inputs: 
   let
     system = "x86_64-linux";
     pkgs = nixpkgs.legacyPackages.${system};
@@ -32,6 +36,7 @@
       modules = [
         ./nixos/configuration.nix
         chaotic.nixosModules.default
+        auto-cpufreq.nixosModules.default
         stylix.nixosModules.stylix
         home-manager.nixosModules.home-manager
         {

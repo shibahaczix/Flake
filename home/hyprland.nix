@@ -8,8 +8,8 @@
     settings = {
       general = {
         env = [
-	  "HYPRCURSOR_SIZE,24"
-	];
+          "HYPRCURSOR_SIZE,24"
+        ];
         gaps_in = "5";
         gaps_out = "10";
 
@@ -65,7 +65,7 @@
 	"$mod, Q, killactive, "
 	"$mod, V, togglefloating"
 	"$mod, T, exec, hyprpicker -a --no-zoom"
-	"$mod, C, exec, grimblast copy area"
+	''$mod, C, exec, grim -g "$(slurp)"''
 	"$mod, left, movefocus, l"
 	"$mod, right, movefocus, r"
 	"$mod, up, movefocus, u"

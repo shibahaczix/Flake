@@ -8,7 +8,8 @@
     pkgs.floorp
     pkgs.wl-clipboard
     pkgs.cliphist
-    pkgs.grimblast
+    pkgs.grim
+    pkgs.slurp
     pkgs.nautilus
     pkgs.vesktop
     pkgs.obs-studio

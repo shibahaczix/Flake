@@ -31,19 +31,30 @@
     };
     keymaps = [
       {
-        action = ":Telescope find_files<CR>";
-        key = "<C-f>";
-        mode = "n";
+        key = "<C-/>";
+        action = ":FloatermToggle<CR>";
+        mode = ["n" "t"];
         options = {
           silent = true;
+          noremap = true;
         };
       }
       {
-        action = ":FloatermToggle<CR>";
-        key = "<C-g>";
+        key = "<Esc>";
+        action = "<C-\\><C-n>:FloatermHide<CR>";
+        mode = "t";
+        options = {
+          silent = true;
+          noremap = true;
+        };
+      }
+      {
+        key = "<Space><Space>";
+        action = ":Telescope find_files<CR>";
         mode = "n";
         options = {
           silent = true;
+          noremap = true;
         };
       }
     ];

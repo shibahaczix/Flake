@@ -11,6 +11,15 @@
     plugins.floaterm.enable = true;
     plugins.indent-blankline.enable = true;
     plugins.undotree.enable = true;
+    plugins.fidget = {
+      enable = true;
+      notification = {
+        window = {
+          winblend = 0;
+          relative = "editor";
+        };
+      };
+    };
     plugins.lsp = {
       enable = true;
 

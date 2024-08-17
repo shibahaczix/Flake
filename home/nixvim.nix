@@ -5,36 +5,56 @@
     enable = true;
     extraPlugins = [ pkgs.vimPlugins.fleet-theme-nvim ];
     colorscheme = "fleet";
-    plugins.telescope.enable = true;
-    plugins.cmp.enable = true;
-    #plugins.lightline.enable = true;
-    plugins.floaterm.enable = true;
-    plugins.indent-blankline.enable = true;
-    plugins.undotree.enable = true;
-    plugins.fidget = {
-      enable = true;
-      notification = {
-        window = {
-          winblend = 0;
-          relative = "editor";
+    opts.number = true;
+    clipboard = {
+      register = "unnamedplus";
+      providers = {
+        wl-copy = {
+          enable = true;
+          package = pkgs.wl-clipboard;
         };
       };
     };
-    plugins.lsp = {
-      enable = true;
-
-      servers = {
-        lua-ls = {
-          enable = true;
-          settings.telemetry.enable = false;
+    plugins = {
+      auto-save.enable = true;
+      telescope.enable = true;
+      cmp = {
+        enable = true;
+	autoEnableSources = true;
+      };
+      #lightline.enable = true;
+      floaterm.enable = true;
+      indent-blankline.enable = true;
+      undotree.enable = true;
+      lspkind = {
+        enable = true;
+        mode = "symbol_text";
+      };
+      fidget = {
+        enable = true;
+         notification = {
+          window = {
+            winblend = 0;
+            relative = "editor";
+          };
         };
-        rust-analyzer = {
-          enable = true;
-          installCargo = true;
-        };
-        zls = {
+      };
+      lsp = {
+        enable = true;
 
-          enable = true;
+        servers = {
+          ltex.settings.completionEnabled = true;
+          lua-ls = {
+            enable = true;
+            settings.telemetry.enable = false;
+          };
+          rust-analyzer = {
+            enable = true;
+            installCargo = true;
+          };
+          zls = {
+            enable = true;
+          };
         };
       };
     };

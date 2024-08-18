@@ -16,6 +16,22 @@
       };
     };
     plugins = {
+      #bufferline = {
+      #  enable = true;
+      #};
+
+      lazygit = {
+        enable = true;
+      };
+
+      lualine = {
+        enable = true;
+      };
+
+      treesitter = {
+        enable = true;
+      };
+
       auto-save.enable = true;
 
       telescope.enable = true;
@@ -23,6 +39,19 @@
       oil = {
         enable = true;
       };
+
+      toggleterm = {
+        enable = true;
+        settings = {
+          hide_numbers = false;
+          autochdir = true;
+          close_on_exit = true;
+          direction = "float";
+        };
+      };
+
+      #lightline.enable = true;
+
       cmp-emoji = {
         enable = true;
       };
@@ -90,16 +119,6 @@
       cmp-cmdline = {
         enable = true; # autocomplete for cmdline
       }; 
-      #lightline.enable = true;
-      toggleterm = {
-        enable = true;
-        settings = {
-          hide_numbers = false;
-          autochdir = true;
-          close_on_exit = true;
-          direction = "vertical";
-        };
-      };
 
       todo-comments = {
         enable = true;
@@ -156,7 +175,7 @@
     keymaps = [
       {
         key = "<C-/>";
-        action = ":FloatermToggle<CR>";
+        action = ":ToggleTerm<CR>";
         mode = ["n" "t"];
         options = {
           silent = true;
@@ -165,7 +184,7 @@
       }
       {
         key = "<Esc>";
-        action = "<C-\\><C-n>:FloatermHide<CR>";
+        action = "<C-\\><C-n>:hide<CR>";
         mode = "t";
         options = {
           silent = true;
